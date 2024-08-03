@@ -12,6 +12,6 @@ phases:
     commands:
       - docker push 339713023613.dkr.ecr.ap-southeast-1.amazonaws.com/ijse_ai:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"mywebsite","imageUri":"%s"}]' 339713023613.dkr.ecr.ap-southeast-1.amazonaws.com/ijse_ai:latest > imagedefinitions.json
+      - printf '[{"name":"ijse_ai","imageUri":"%s"}]' 339713023613.dkr.ecr.ap-southeast-1.amazonaws.com/ijse_ai:latest > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
