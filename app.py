@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<h1>No Kidding Im the Best V10</h1>'
+    return '<h1>Deployment Test 11 fully automated</h1>'
 
 if __name__ == '__main__':
     #app.run(debug=True)
