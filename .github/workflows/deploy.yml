@@ -31,7 +31,7 @@ jobs:
       - name: Run CodeBuild
         uses: aws-actions/aws-codebuild-run-build@v1
         with:
-          project-name: my-app
+          project-name: coinbase_project
 
       - name: Deploy to EKS
         run: |
