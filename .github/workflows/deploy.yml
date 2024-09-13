@@ -28,6 +28,11 @@ jobs:
       - name: Update kubeconfig
         run: aws eks update-kubeconfig --name coinbase_eks_cluster --region ap-southeast-1
 
+      - name: Run CodeBuild
+        uses: aws-actions/aws-codebuild-run-build@v1
+        with:
+          project-name: my-app
+
       - name: Deploy to EKS
         run: |
           helm upgrade --install my-app ./helm-chart --namespace default
